@@ -45,6 +45,7 @@ package components is
 	
 	component branch_predictor is
 		port(pc		: in std_logic_vector(6 downto 0);
+			  clk		: in std_logic;
 			  bp_out : out std_logic_vector(6 downto 0);
 			  sel 	: out std_logic);
 	end component;

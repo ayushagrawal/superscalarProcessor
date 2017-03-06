@@ -64,6 +64,7 @@ begin
 																	 output => pc_out);
 	
 	BP		  : branch_predictor port map(pc 	 => pc_out,
+													clk	 => clk,
 													bp_out => bp_out,
 													sel	 => mux_sel);
 	
